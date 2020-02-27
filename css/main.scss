@@ -1,8 +1,31 @@
+
+@mixin flexBox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin pageButton($width, $height) {
+    width: $width;
+    height: $height;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+
+
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 *, *::before, *::after {
@@ -14,4 +37,168 @@ main {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
+    section {
+        background-color: transparent;
+    }
+
+    #first {
+        width: 100%;
+        height: 100%;
+        @include flexBox(column);
+        background-image: url(../img/home-motorcycle.jpg);
+        background-size: cover;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+        }
+
+        header {
+            width: 100%;
+            height: 12%;
+            z-index: 1;
+
+            .header-container {
+                width: 100%;
+                height: 90px;
+                @include flexBox(row);
+                justify-content: space-between;
+
+                .web-logo {
+                    width: 20%;
+                    height: 100%;
+                    @include flexBox(row);
+                    justify-content: center;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 3em;
+                        color: #ffffff;
+                    }
+                }
+
+                nav {
+                    width: 43%;
+                    height: 100%;
+
+                    & > ul {
+                        width: 90%;
+                        height: 100%;
+                        margin: 0;
+                        margin-left: 10px;
+                        padding: 0;
+                        @include flexBox(row);
+                        justify-content: space-around;
+                        align-items: center;
+
+                        li {
+                            width: auto;
+                            height: 32px;
+                            background-color: palegreen;
+                            list-style: none;
+                            @include flexBox(row);
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 20px;
+
+                            a {
+                                text-decoration: none;
+                                font-weight: 500;
+                                letter-spacing: 2px;
+                            }
+
+                            &:nth-of-type(4) {
+                                position: relative;
+
+                                ul {
+                                    position: absolute;
+                                    width: 100%;
+                                    top: 100%;
+                                    margin: 0;
+                                    margin-top: 2px;
+                                    padding: 0;
+
+                                    li {
+                                        width: 100%;
+                                        position: relative;
+                                        margin-bottom: 2px;
+
+                                        a {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        .container {
+            width: 1140px;
+            height: 100%;
+        }
+
+        .first-section {
+            width: 100%;
+            height: 88%;
+            z-index: 1;
+            
+            @include flexBox(row);
+            justify-content: center;
+
+            .first-container {
+
+                & > div {
+                    width: 50%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    div {
+                        width: 100%;
+                        height: 40%;
+                        margin-top: 40%;
+
+                        h2 {
+                            margin: 0;
+                            font-size: 2.5em;
+                            font-weight: 600;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+    
+                        p {
+                            margin: 0;
+                            margin-top: 20px;
+                            line-height: 25px;
+                            font-weight: 600;
+                            color: #ffffff;
+                        }
+
+                        button {
+                            margin-top: 30px;
+                            @include pageButton(152px, 50px);
+                            font-size: .9em;
+                            color: #ffffff;
+
+                            &:hover {
+                                background-color: #ffffff;
+                                color: darkolivegreen;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

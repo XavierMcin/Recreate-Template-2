@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 *, *::before, *::after {
@@ -15,5 +16,223 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+main section {
+  background-color: transparent;
+}
+
+main #first {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../img/home-motorcycle.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+main #first::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+main #first header {
+  width: 100%;
+  height: 12%;
+  z-index: 1;
+}
+
+main #first header .header-container {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #first header .header-container .web-logo {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #first header .header-container .web-logo h1 {
+  font-size: 3em;
+  color: #ffffff;
+}
+
+main #first header .header-container nav {
+  width: 43%;
+  height: 100%;
+}
+
+main #first header .header-container nav > ul {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #first header .header-container nav > ul li {
+  width: auto;
+  height: 32px;
+  background-color: palegreen;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+main #first header .header-container nav > ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+main #first header .header-container nav > ul li:nth-of-type(4) {
+  position: relative;
+}
+
+main #first header .header-container nav > ul li:nth-of-type(4) ul {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+}
+
+main #first header .header-container nav > ul li:nth-of-type(4) ul li {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+main #first header .header-container nav > ul li:nth-of-type(4) ul li a {
+  text-decoration: none;
+}
+
+main #first .container {
+  width: 1140px;
+  height: 100%;
+}
+
+main #first .first-section {
+  width: 100%;
+  height: 88%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #first .first-section .first-container > div {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+main #first .first-section .first-container > div div {
+  width: 100%;
+  height: 40%;
+  margin-top: 40%;
+}
+
+main #first .first-section .first-container > div div h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main #first .first-section .first-container > div div p {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+main #first .first-section .first-container > div div button {
+  margin-top: 30px;
+  width: 152px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #ffffff;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  font-size: .9em;
+  color: #ffffff;
+}
+
+main #first .first-section .first-container > div div button:hover {
+  background-color: #ffffff;
+  color: darkolivegreen;
 }
 /*# sourceMappingURL=main.css.map */
