@@ -22,6 +22,12 @@ main {
   /*****************/
   /**SECOND SECTION*/
   /*****************/
+  /****************/
+  /**THIRD SECTION*/
+  /****************/
+  /*****************/
+  /**FOURTH SECTION*/
+  /*****************/
 }
 
 main section {
@@ -239,12 +245,12 @@ main #first .first-section .first-container > div div button {
 
 main #first .first-section .first-container > div div button:hover {
   background-color: #ffffff;
-  color: darkolivegreen;
+  color: #556b2f;
 }
 
 main #second {
   width: 100%;
-  height: 85vh;
+  height: auto;
   background-color: #ffffff;
   overflow: hidden;
   display: -webkit-box;
@@ -270,6 +276,7 @@ main #second .second-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 642px;
 }
 
 main #second .second-container > div:first-of-type {
@@ -356,5 +363,166 @@ main #second .second-container > div:last-of-type > div div:last-of-type h3 {
 main #second .second-container > div:last-of-type > div div:last-of-type p {
   font-weight: 500;
   color: #5e5e5e;
+  line-height: 25px;
+}
+
+main #third {
+  width: 100%;
+  height: auto;
+  background-color: #EBEDEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #third .third-container {
+  height: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #third .third-container > div:first-of-type {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #third .third-container > div:first-of-type .third-info {
+  height: 75%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #third .third-container > div:first-of-type .third-info > div {
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #third .third-container > div:first-of-type .third-info > div div:first-of-type {
+  width: 30%;
+  height: 90%;
+  position: relative;
+  border: 5px solid #ffffff;
+}
+
+main #third .third-container > div:first-of-type .third-info > div div:first-of-type img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #third .third-container > div:first-of-type .third-info > div div:last-of-type {
+  width: 65%;
+  height: 90%;
+}
+
+main #third .third-container > div:first-of-type .third-info > div div:last-of-type h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0;
+  color: #556b2f;
+}
+
+main #third .third-container > div:first-of-type .third-info > div div:last-of-type p {
+  font-weight: 500;
+  line-height: 25px;
+  color: #5e5e5e;
+}
+
+main #third .third-container > div:last-of-type {
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #third .third-container > div:last-of-type .dirtbike {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  border: 5px solid #ffffff;
+}
+
+main #third .third-container > div:last-of-type .dirtbike img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #fourth {
+  width: 100%;
+  height: 100vh;
+  background-color: indianred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #fourth .fourth-container {
+  background-color: indigo;
 }
 /*# sourceMappingURL=main.css.map */
