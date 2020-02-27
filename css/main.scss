@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    background-color: khaki;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
