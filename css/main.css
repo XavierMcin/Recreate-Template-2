@@ -43,6 +43,9 @@ main {
   /****************/
   /**NINTH SECTION*/
   /****************/
+  /*****************/
+  /**FOOTER SECTION*/
+  /*****************/
 }
 
 main section {
@@ -1055,8 +1058,151 @@ main #eighth .eighth-container > div .review-info span {
 
 main #ninth {
   width: 100%;
-  height: 125vh;
-  background-color: chocolate;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+}
+
+main #ninth .ninth-container {
+  height: 943px;
+}
+
+main #ninth .ninth-container h2 {
+  font-size: 2.8em;
+  text-align: center;
+  color: #33353a;
+  margin: 80px 0 80px 0;
+}
+
+main #ninth .ninth-container .contact {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #ninth .ninth-container .contact > div {
+  width: 48.5%;
+  height: 100%;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form label {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0 10px 0;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form input {
+  margin-bottom: 15px;
+  height: 57px;
+  border-radius: 5px;
+  border: 2px solid #d2d6da;
+  padding: 0 10px;
+  cursor: text;
+  color: #495057;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form textarea {
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: 2px solid #d2d6da;
+  padding: 10px 0 0 10px;
+  cursor: text;
+  color: #495057;
+  font-weight: 600;
+  letter-spacing: 1px;
+  resize: vertical;
+  max-height: 198px;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form button {
+  width: 162px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #ffffff;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+  background-color: #1c2833;
+  color: #ffffff;
+  font-size: .9em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+}
+
+main #ninth .ninth-container .contact > div:first-of-type form button:hover {
+  background-color: #556b2f;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type {
+  width: 100%;
+  height: 55%;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div {
+  width: 100%;
+  height: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div div:first-of-type {
+  width: 25%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,7 +1215,204 @@ main #ninth {
           justify-content: center;
 }
 
-main #ninth .ninth-container {
-  background-color: darkblue;
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div div:first-of-type span {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-color: cornflowerblue;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div div:last-of-type {
+  width: 75%;
+  height: 100%;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div div:last-of-type h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #556b2f;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type > div:first-of-type > div div:last-of-type p {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  color: #5a646b;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type .maps {
+  width: 100%;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main #ninth .ninth-container .contact > div:last-of-type .maps iframe {
+  width: 90%;
+}
+
+main footer {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/footer-motorcycle.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+main footer .footer-container {
+  width: 94%;
+  height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+main footer .footer-container .footer-info {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main footer .footer-container .footer-info > div:first-of-type {
+  width: 28%;
+  height: 100%;
+}
+
+main footer .footer-container .footer-info > div:first-of-type h2 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #556b2f;
+  margin-top: 75px;
+}
+
+main footer .footer-container .footer-info > div:first-of-type p {
+  font-weight: 500;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+main footer .footer-container .footer-info > div:last-of-type {
+  width: 65%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div:first-of-type {
+  width: 25%;
+  height: 100%;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div:nth-of-type(2) {
+  width: 36%;
+  height: 100%;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div:last-of-type {
+  width: 36%;
+  height: 100%;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div h3 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #556b2f;
+  border-bottom: 1px solid rgba(251, 247, 247, 0.1);
+  padding-bottom: 15px;
+  margin-top: 75px;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div ul {
+  padding: 0;
+  margin: 0;
+}
+
+main footer .footer-container .footer-info > div:last-of-type div ul li {
+  list-style: none;
+  margin: 15px 0 15px 0;
+  font-weight: 500;
+  font-size: .9em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+main footer .footer-container .social {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main footer .footer-container .social p {
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 35px;
+}
+
+main footer .footer-container .social span {
+  display: block;
+  width: 200px;
+  height: 20px;
+  background-color: cornflowerblue;
 }
 /*# sourceMappingURL=main.css.map */
