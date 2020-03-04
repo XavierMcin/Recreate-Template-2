@@ -29,6 +29,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body.stick {
+    overflow-y: hidden;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -95,7 +99,7 @@ main {
                     .hamburger-menu {
                         width: 90%;
                         height: 5px;
-                        background-color: darksalmon;
+                        background-color: #ffffff;
                         border-radius: 5px;
                         position: relative;
                         transition: all .3s ease-in-out;
@@ -127,7 +131,7 @@ main {
                             background-color: transparent;
 
                             &::before, &::after {
-                                background-color: salmon;
+                                background-color: #ffffff;
                             }
 
                             &::before {
@@ -153,7 +157,7 @@ main {
                     h1 {
                         font-size: 3em;
                         color: #ffffff;
-                    }
+                    } 
                 }
 
                 nav {

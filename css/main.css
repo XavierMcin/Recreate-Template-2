@@ -7,6 +7,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body.stick {
+  overflow-y: hidden;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -126,7 +130,7 @@ main #first header .header-container #mobile-menu {
 main #first header .header-container #mobile-menu .hamburger-menu {
   width: 90%;
   height: 5px;
-  background-color: darksalmon;
+  background-color: #ffffff;
   border-radius: 5px;
   position: relative;
   -webkit-transition: all .3s ease-in-out;
@@ -160,7 +164,7 @@ main #first header .header-container #mobile-menu.open .hamburger-menu {
 }
 
 main #first header .header-container #mobile-menu.open .hamburger-menu::before, main #first header .header-container #mobile-menu.open .hamburger-menu::after {
-  background-color: salmon;
+  background-color: #ffffff;
 }
 
 main #first header .header-container #mobile-menu.open .hamburger-menu::before {
@@ -1656,7 +1660,30 @@ main footer .footer-container .social span {
     height: 700px;
   }
   main #first header .header-container nav {
-    display: none;
+    width: 50vw;
+    height: 100vh;
+    background-color: #556b2f;
+    position: absolute;
+    top: 0;
+    right: -50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  main #first header .header-container nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 75%;
+  }
+  main #first header .header-container nav.clicked {
+    right: 0;
   }
   main #first header .header-container #mobile-menu {
     display: -webkit-box;
