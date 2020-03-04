@@ -26,6 +26,7 @@ html, body {
     width: 100%;
     height: auto;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -33,18 +34,14 @@ html, body {
 }
 
 main {
-    background-color: khaki;
     width: 100%;
     height: auto;
     overflow: hidden;
 
-    section {
-        background-color: transparent;
-    }
-
     .container {
         width: 1140px;
         height: 100%;
+        margin: 0 50px 0 50px;
     }
 
 
@@ -78,19 +75,80 @@ main {
             width: 100%;
             height: 12%;
             z-index: 2;
+            @include flexBox(row);
+            justify-content: center;
 
             .header-container {
-                width: 100%;
+                width: 95%;
                 height: 90px;
                 @include flexBox(row);
                 justify-content: space-between;
+                align-items: center;
+
+                #mobile-menu {
+                    display: none;
+                    width: 35px;
+                    height: 35px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .hamburger-menu {
+                        width: 90%;
+                        height: 5px;
+                        background-color: darksalmon;
+                        border-radius: 5px;
+                        position: relative;
+                        transition: all .3s ease-in-out;
+
+                        &::before, &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: inherit;
+                            border-radius: inherit;
+                            transition: all .1s ease-in-out;
+                        }
+
+                        &::before {
+                            transform: translateY(-10px);
+                            width: 60%;
+                        }
+
+                        &::after {
+                            transform: translateY(10px);
+                        }
+
+                        
+                    }
+
+                    &.open {
+                        .hamburger-menu {
+                            background-color: transparent;
+
+                            &::before, &::after {
+                                background-color: salmon;
+                            }
+
+                            &::before {
+                                width: 100%;
+                                transform: rotate(-45deg);
+                            }
+
+                            &::after {
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
 
                 .web-logo {
-                    width: 20%;
+                    width: auto;
                     height: 100%;
                     @include flexBox(row);
                     justify-content: center;
                     align-items: center;
+                    position: relative;
 
                     h1 {
                         font-size: 3em;
@@ -99,11 +157,12 @@ main {
                 }
 
                 nav {
-                    width: 43%;
+                    width: auto;
                     height: 100%;
+                    position: relative;
 
                     & > ul {
-                        width: 90%;
+                        width: 100%;
                         height: 100%;
                         margin: 0;
                         margin-left: 10px;
@@ -265,7 +324,7 @@ main {
                         p {
                             margin: 0;
                             margin-top: 20px;
-                            line-height: 25px;
+                            line-height: 30px;
                             font-weight: 600;
                             color: #ffffff;
                         }
@@ -310,12 +369,12 @@ main {
 
         .second-container {
             @include flexBox(column);
-            justify-content: center;
             height: 642px;
 
             & > div:first-of-type {
-                height: 45%;
+                height: auto;
                 width: 100%;
+                margin-top: 100px;
 
                 h2 {
                     text-align: center;
@@ -332,7 +391,7 @@ main {
             }
 
             & > div:last-of-type {
-                height: 20%;
+                height: auto;
                 width: 100%;
                 @include flexBox(row);
                 justify-content: space-between;
@@ -568,13 +627,14 @@ main {
 
     #fifth {
         width: 100%;
-        height: 105vh;
+        height: auto;
         @include flexBox(row);
         justify-content: center;
         background-color: #ffffff;
 
         .fifth-container {
             @include flexBox(column);
+            height: 792px;
 
             h2 {
                 font-size: 2.8em;
@@ -739,7 +799,7 @@ main {
         .seventh-container {
             @include flexBox(column);
             justify-content: flex-end;
-            height: 1320px;
+            height: auto;
 
             h2 {
                 font-size: 2.8em;
@@ -750,23 +810,29 @@ main {
 
             .blog-post {
                 width: 100%;
-                height: 484px;
+                height: auto;
                 @include flexBox(row);
                 justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 100px;
 
                 & > div {
                     width: 31.5%;
                     height: 100%;
 
+                    &:nth-child(n-3) {
+                        margin-bottom: 30px;
+                    }
+
                     div {
                         width: 100%;
-                        height: 50%;
+                        height: auto;
                         position: relative;
                         overflow: hidden;
 
                         &.blog-info {
                             border: 1px solid #dee2e6;
-                            padding-left: 20px;;
+                            padding-left: 20px;
                             
                             &:nth-of-type(even) {
                                 border-top: none;
@@ -781,6 +847,7 @@ main {
                         img {
                             width: 100%;
                             height: 100%;
+                            min-height: 200px;
                             object-fit: cover;
                         }
 
@@ -817,6 +884,7 @@ main {
                             font-size: .9em;
                             font-weight: 600;
                             color: #212529;
+                            margin-bottom: 20px;
 
                             &:hover {
                                 background-color: #556b2f;
@@ -826,13 +894,6 @@ main {
                     }
                 }
 
-                &:first-of-type {
-                    margin-bottom: 50px;
-                }
-
-                &:last-of-type {
-                    margin-bottom: 100px;
-                }
             }
         }
     }
@@ -881,7 +942,7 @@ main {
 
             & > div {
                 width: 100%;
-                height: 50%;
+                height: auto;
                 @include flexBox(row);
                 justify-content: space-between;
 
@@ -1126,7 +1187,7 @@ main {
 
             .footer-info {
                 width: 100%;
-                height: 70%;
+                height: auto;
                 @include flexBox(row);
                 justify-content: space-between;
 
@@ -1192,6 +1253,17 @@ main {
                                 font-size: .9em;
                                 cursor: pointer;
                                 color: #ffffff;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                    opacity: 1;
+                                    transition: opacity .1s ease-in-out;
+
+                                    &:hover {
+                                        opacity: .8;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1203,6 +1275,7 @@ main {
                 height: 30%;
                 @include flexBox(column);
                 align-items: center;
+                margin-top: 60px;
 
                 p {
                     font-weight: 600;
@@ -1223,3 +1296,5 @@ main {
 
 
 }
+
+@import "./media";
